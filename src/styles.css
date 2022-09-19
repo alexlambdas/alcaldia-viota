@@ -1,0 +1,687 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 1. Stles for InputPlusIcon.jsx */
+.input_plus_icon{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.input_plus_icon > input {
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  border-bottom: 2px solid #bdbdbd;
+  margin-left: 15px;
+  width: 220px;
+  font-size: 18px;
+}
+.input_plus_icon > input:focus {
+  outline: none;
+  border-bottom: 2px solid #1e88e5;
+  transition: 0.4s ease;
+}
+.input_plus_icon > input:active{
+  border-bottom: 2px solid #1e88e5;
+}
+.input_plus_icon_error{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.input_plus_icon_error > input {
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  border-bottom: 2px solid #ec407a;
+  margin-left: 15px;
+  width: 220px;
+  font-size: 18px;
+}
+.input_plus_icon_error > input:focus {
+  outline: none;
+}
+
+
+/* 2. Styles for ButtonPlusIcon.jsx */
+.button_plus_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.button_plus_icon > button{
+  font-family: 'Ubuntu', sans-serif;
+  height: 35px;
+  margin-left: 15px;
+  width: 220px;
+  border: none;
+  background-color: #1e88e5;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button_plus_icon > button:hover{
+  transition: 0.4s ease;
+  background-color: #005DC7; 
+}
+.button_plus_icon > button:focus {
+  outline: none;
+}
+.button_plus_icon > button:active {
+  background-color: #1e88e5;
+}
+.btn_plus_icon_fail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.btn_plus_icon_fail > button{
+  font-family: 'Ubuntu', sans-serif;
+  height: 35px;
+  margin-left: 15px;
+  width: 220px;
+  border: none;
+  background-color: #ec407a;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn_plus_icon_fail > button:hover{
+  background-color: #f06292;
+}
+.btn_plus_icon_fail > button:focus {
+  outline: none;
+}
+.btn_plus_icon_fail > button:active {
+  background-color: #ec407a;
+}
+
+/* 3. Styles for PageLofin.jsx */
+.login{
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.login > div:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #005DC7;
+  margin-bottom: 25px;
+}
+.login > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  
+}
+.login > div:nth-child(1) > span{
+  color: white;
+  font-size: 32px;
+}
+.fail_login{
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.fail_login > div:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #ec407a;
+  margin-bottom: 25px;
+}
+.fail_login > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  
+}
+.fail_login > div:nth-child(1) > span{
+  color: white;
+  font-size: 32px;
+}
+
+/* 4. Styles for PageLogin.jsx */
+.container_page_login{
+  width: 100%;
+  height: 100vh;
+  padding-top: 15vh;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* 5. Styles for SideNav.jsx */
+.container_side_nav {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100vh;
+  background-color: #005DC7;
+  -webkit-box-shadow: 2px 0px 5px 0px rgba(158,158,158,1);
+  -moz-box-shadow: 2px 0px 5px 0px rgba(158,158,158,1);
+  box-shadow: 2px 0px 5px 0px rgba(158,158,158,1);
+}
+.container_side_nav > div:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+}
+.container_side_nav > div:nth-child(2){
+  width: 300px;
+  height: 166px;
+}
+.items_side_nav {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.items_side_nav > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.items_side_nav > div:nth-child(1) > span{
+  color: white;
+}
+.items_side_nav > div{
+  margin-bottom: 3px;
+  width: 300px;
+}
+
+/* 6. Styles for SideNavItem.jsx */
+.side_nav_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.side_nav_item:hover{
+  transition: 0.6s ease;
+  background-color: #0BA5DE;
+  cursor: pointer;
+}
+.side_nav_item > div:nth-child(2){
+  margin-left: 10px;
+}
+.text_decoration{
+  text-decoration: none;
+}
+
+/* 7.Styles for IntroApp.jsx */
+.container_form_intro_app{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 455px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.container_form_intro_app > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container_form_intro_app > div:nth-child(2) > div:nth-child(1) {
+  color: #424242;
+  font-size: 24px;
+  padding: 15px;
+}
+.container_form_intro_app > div:nth-child(2) > div:nth-child(2) {
+  padding: 10px 15px 20px 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container_form_intro_app > div:nth-child(2) > div:nth-child(2) > span {
+  color: #005DC7;
+  font-weight: bold;
+}
+
+/* 8. Styles for FormInputFile.jsx */
+.container_form_input_file{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 455px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.container_form_input_file > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container_form_input_file > div:nth-child(2) > div:nth-child(1) {
+  color: #424242;
+  font-size: 24px;
+  padding: 15px;
+}
+.container_form_input_file > div:nth-child(2) > div:nth-child(2) {
+  padding: 15px 15px 20px 15px;
+}
+.container_form_input_file > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+}
+.container_form_input_file > div:nth-child(3) > div:nth-child(1){
+  display: flex;
+  align-items: center;
+  background-color: #1e88e5;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  
+}
+.container_form_input_file > div:nth-child(3) > div:nth-child(1):hover{
+  background-color: #0BA5DE;
+  transition: 0.4s ease;
+}
+.label_input_file {
+  cursor: pointer;
+  color: white;
+  padding-left: 25px;
+}
+.container_form_input_file > div:nth-child(3) > div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+}
+.container_form_input_file > div:nth-child(3) > div:nth-child(2) > div:nth-child(1){
+  margin-top: 10px;
+}
+.container_form_input_file > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
+  margin-left: 8px;
+}
+.container_form_input_file > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.container_form_input_file > div:nth-child(4) > button{
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  color: white;
+  background-color: #24AB65;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container_form_input_file > div:nth-child(4) > button:hover {
+  background-color: #00e676;
+}
+.container_form_input_file > div:nth-child(4) > button:focus {
+  outline: none;
+  background-color: #00e676;
+}
+.svg_cancel {
+  width: 50px;
+}
+
+/* 9. Styles for FormSendFile.jsx */
+.container_form_send_file {
+  display: flex;
+  flex-direction: column;
+}
+.container_form_send_file > div {
+  color: #616161;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.container_form_send_file > div > button {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #24AB65;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(158,158,158,1);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(158,158,158,1);
+  box-shadow: 3px 3px 7px 0px rgba(158,158,158,1);
+}
+.container_form_send_file > div > button:hover {
+  background-color: #1DB1B8;
+  transition: 0.4s ease;
+}
+.container_form_send_file > div > button:focus{
+  outline: none;
+}
+.container_form_send_file > div > button:active{
+  background-color: #005DC7;
+}
+
+/* . Styles for Mailing.jsx */
+.container_mailing {
+  display: flex;
+  padding-left: 120px;
+  padding-top: 50px;
+}
+.container_mailing_forms {
+  display: flex;
+  flex-direction: column;
+}
+
+/* . Styles for PageIntro.jsx */
+.container_page_intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.container_page_intro > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container_intro_app {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/* . Styles for PageInputFile.jsx */
+.container_input_file {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/* . Styles for PageSubject.jsx */
+.container_page_subject {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/* . Styles for FormSubjectMail.jsx */
+.container_form_subject{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 455px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.container_form_subject > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container_form_subject > div:nth-child(2) > div:nth-child(1) {
+  color: #424242;
+  font-size: 24px;
+  padding: 15px;
+}
+.container_form_subject > div:nth-child(2) > div:nth-child(2) {
+  padding: 10px 15px 20px 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container_form_subject > div:nth-child(2) > div:nth-child(2) > span {
+  color: #005DC7;
+  font-weight: bold;
+}
+.container_form_subject > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* . Styles for BackButton.jsx */
+.btn_back{
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: #ec407a;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.btn_back:hover {
+  transition: 0.4s ease;
+  background-color: #e91e63;
+}
+
+/* . Styles for NextButton.jsx */
+.btn_next{
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: #24AB65;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.btn_next:hover {
+  transition: 0.4s ease;
+  background-color: #1DB1B8;
+}
+.btn_next_disable {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: #757575;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* . Styles for PageMessage.jsx */
+.container_page_message {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/* . Styles for FormMessageMail.jsx */
+.container_form_message{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 455px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.container_form_message > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container_form_message > div:nth-child(2) > div:nth-child(1) {
+  color: #424242;
+  font-size: 24px;
+  padding: 15px;
+}
+.container_form_message > div:nth-child(2) > div:nth-child(2) {
+  padding: 10px 15px 20px 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container_form_message > div:nth-child(2) > div:nth-child(2) > span {
+  color: #005DC7;
+  font-weight: bold;
+}
+.container_form_message > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* . Styles for PageSuccess.jsx */
+.container_page_success {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/* . Styles for FormSuccess.jsx */
+.container_form_success{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 455px;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.container_form_success > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container_form_success > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container_form_success > div:nth-child(2) > div:nth-child(1) {
+  color: #424242;
+  font-size: 24px;
+  padding: 15px;
+}
+.container_form_success > div:nth-child(2) > div:nth-child(2) {
+  padding: 10px 15px 20px 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container_form_success > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+/* . Styles for HeaderNav.jsx */
+.container_nav_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+  height: 100px;
+  background-color: #005DC7;
+  width: 100%;
+  -webkit-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  -moz-box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+  box-shadow: 6px 5px 9px -2px rgba(66,66,66,0.77);
+}
+.nav_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.nav_header > div:nth-child(1) {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.nav_header > button {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
+  border: 1px solid white;
+  background-color: #005DC7;
+  height: 40px;
+  width: 160px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.nav_header > button:hover {
+  transition: 0.4 ease;
+  background-color: #0BA5DE;
+}
+.nav_header > button:focus{
+  outline: none;
+}

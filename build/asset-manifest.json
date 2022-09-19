@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13a95fda.chunk.css",
+    "main.js": "/static/js/main.8ccd0bb3.chunk.js",
+    "main.js.map": "/static/js/main.8ccd0bb3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.29d780af.js",
+    "runtime-main.js.map": "/static/js/runtime-main.29d780af.js.map",
+    "static/js/2.3abf44db.chunk.js": "/static/js/2.3abf44db.chunk.js",
+    "static/js/2.3abf44db.chunk.js.map": "/static/js/2.3abf44db.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.13a95fda.chunk.css.map": "/static/css/main.13a95fda.chunk.css.map",
+    "static/js/2.3abf44db.chunk.js.LICENSE.txt": "/static/js/2.3abf44db.chunk.js.LICENSE.txt",
+    "static/media/SvgAccept.4679252c.svg": "/static/media/SvgAccept.4679252c.svg",
+    "static/media/SvgAccept2.4679252c.svg": "/static/media/SvgAccept2.4679252c.svg",
+    "static/media/SvgCancel.e4922b72.svg": "/static/media/SvgCancel.e4922b72.svg",
+    "static/media/SvgFileUpload.b1f966aa.svg": "/static/media/SvgFileUpload.b1f966aa.svg",
+    "static/media/SvgFinger.60550588.svg": "/static/media/SvgFinger.60550588.svg",
+    "static/media/SvgInternet.9f3ac077.svg": "/static/media/SvgInternet.9f3ac077.svg",
+    "static/media/SvgKeyboard.63dc7a66.svg": "/static/media/SvgKeyboard.63dc7a66.svg",
+    "static/media/SvgLaptop.b9669643.svg": "/static/media/SvgLaptop.b9669643.svg",
+    "static/media/SvgMessage.69cf7756.svg": "/static/media/SvgMessage.69cf7756.svg",
+    "static/media/alcaldia_simbolo_300x166px.a441dd13.png": "/static/media/alcaldia_simbolo_300x166px.a441dd13.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29d780af.js",
+    "static/js/2.3abf44db.chunk.js",
+    "static/css/main.13a95fda.chunk.css",
+    "static/js/main.8ccd0bb3.chunk.js"
+  ]
+}
